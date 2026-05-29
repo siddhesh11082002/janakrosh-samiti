@@ -6,27 +6,14 @@ import Footer from './components/Footer';
 
 // GROUP 1: Central Govt, MoRTH & NHAI (~30 emails)
 export const CENTRAL_GOVT_EMAILS = [
-  "nitin.gadkari@nic.in", "secy-road@nic.in", "sangita.toppo-morth@gov.in", "wim.rth@nic.in", 
-  "skyadav95@gmail.com", "yadavsk.up@nic.in", "erphelpdesk@nhai.org", "romumbai@nhai.org", 
-  "nhairomaharashtra@gmail.com", "piuthane@nhai.org", "piuthane@gmail.com", "pune@nhai.org", 
-  "punenhai@gmail.com", "nashik@nhai.org", "nhaipiunashik@gmail.com", "vch-niti@gov.in", 
-  "ceo-niti@gov.in", "mos-planning@gov.in", "vk.saraswat@gov.in", "rc.niti@gov.in", 
-  "vinodk.paul@gov.in", "rajiv.gauba@gov.in", "member.ak@niti.gov.in", "member.srinivas@gov.in", 
-  "kv.raju@niti.gov.in", "neelam.patel@nic.in", "ranjanrakesh100@gmail.com", "piyush.goyal@gov.in", 
-  "mos-ci@gov.in", "secy-ipp@nic.in"
+  "nitin.gadkari@nic.in", "secy-road@nic.in","skyadav95@gmail.com", "yadavsk.up@nic.in", "erphelpdesk@nhai.org", "romumbai@nhai.org","nhairomaharashtra@gmail.com", "piuthane@nhai.org", "piuthane@gmail.com", "pune@nhai.org","punenhai@gmail.com","nashik@nhai.org", "nhaipiunashik@gmail.com", "vch-niti@gov.in", "ceo-niti@gov.in", "mos-planning@gov.in", "vk.saraswat@gov.in", "rc.niti@gov.in", "vinodk.paul@gov.in", "rajiv.gauba@gov.in", "member.ak@niti.gov.in", "member.srinivas@gov.in", 
+  "kv.raju@niti.gov.in", "neelam.patel@nic.in", "ranjanrakesh100@gmail.com", "piyush.goyal@gov.in","mos-ci@gov.in", "secy-ipp@nic.in"
 ];
 
 // GROUP 2: State Govt, CMO, Ministers & PWD (~30 emails)
 export const STATE_GOVT_EMAILS = [
-  "cm@maharashtra.gov.in", "chiefminister@maharashtra.gov.in", "prsecretary1tocm@maharashtra.gov.in", 
-  "cssangitrao@maharashtra.gov.in", "dcm@maharashtra.gov.in", "dycm@maharashtra.gov.in", 
-  "cs@maharashtra.gov.in", "min.pwd@maharashtra.gov.in", "stmin.pwd@maharashtra.gov.in", 
-  "acs.pwd@maharashtra.gov.in", "sec.pwdworks@maharashtra.gov.in", "usadm.pwd@maharashtra.gov.in", 
-  "usde.pwd@maharashtra.gov.in", "uscr.pwd@maharashtra.gov.in", "psec.ud1@maharashtra.gov.in", 
-  "acs.housing@maharashtra.gov.in", "sec.ud2@maharashtra.gov.in", "psec.ud2@maharashtra.gov.in", 
-  "acs.transport@maharashtra.gov.in", "transport.commr-mh@gov.in", "adtc.tpt-mh@gov.in", 
-  "min.industry@maharashtra.gov.in", "udaysamant99@gmail.com", "kesarkardeepak@yahoo.com", 
-  "ravindrachavan.mla@gmail.com", "aditti7@yahoo.co.in"
+  "cm@maharashtra.gov.in", "chiefminister@maharashtra.gov.in", "prsecretary1tocm@maharashtra.gov.in", "cssangitrao@maharashtra.gov.in", "dcm@maharashtra.gov.in", "dycm@maharashtra.gov.in", "cs@maharashtra.gov.in", "min.pwd@maharashtra.gov.in", "stmin.pwd@maharashtra.gov.in", "acs.pwd@maharashtra.gov.in", "sec.pwdworks@maharashtra.gov.in", "usadm.pwd@maharashtra.gov.in", 
+  "usde.pwd@maharashtra.gov.in", "uscr.pwd@maharashtra.gov.in", "psec.ud1@maharashtra.gov.in", "acs.housing@maharashtra.gov.in", "sec.ud2@maharashtra.gov.in", "psec.ud2@maharashtra.gov.in", "acs.transport@maharashtra.gov.in", "transport.commr-mh@gov.in", "adtc.tpt-mh@gov.in", "min.industry@maharashtra.gov.in", "udaysamant99@gmail.com", "kesarkardeepak@yahoo.com", "ravindrachavan.mla@gmail.com", "aditti7@yahoo.co.in"
 ];
 
 // GROUP 3: Local Administration, Collectors & SDOs (~35 emails)
