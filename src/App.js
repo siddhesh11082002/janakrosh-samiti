@@ -4,19 +4,50 @@ import Home from './components/Home';
 import About from './components/About';
 import Footer from './components/Footer';
 
+// Extracted email lists
+export const TO_EMAILS = [
+  "nitin.gadkari@nic.in", "secy-road@nic.in", "sangita.toppo-morth@gov.in", "wim.rth@nic.in", "iahe-training@gov.in", "trng.iahe-morth@nic.in", 
+  "skyadav95@gmail.com", "yadavsk.up@nic.in", "erphelpdesk@nhai.org", "romumbai@nhai.org", "nhairomaharashtra@gmail.com", "piuthane@nhai.org", 
+  "piuthane@gmail.com", "pune@nhai.org", "punenhai@gmail.com", "nashik@nhai.org", "nhaipiunashik@gmail.com", "trainingcell@nhai.org", 
+  "raghavchandra@yahoo.com", "akhiljain_1949@yahoo.com", "bimaljulka1955@gmail.com", "ramasubban1951@gmail.com", "ramammad@hotmail.com", 
+  "pbiassatish@gmail.com", "anilkupadhyay@yahoo.com", "vch-niti@gov.in", "ceo-niti@gov.in", "mos-planning@gov.in", "vk.saraswat@gov.in", 
+  "rc.niti@gov.in", "vinodk.paul@gov.in", "rajiv.gauba@gov.in", "member-niti@gov.in", "member.ak@niti.gov.in", "member.srinivas@gov.in", 
+  "kv.raju@niti.gov.in", "neelam.patel@nic.in", "ranjanrakesh100@gmail.com", "annaroy@nic.in", "ajit.pai@nic.in", "prem.bogzi@ias.nic.in", 
+  "rajnath-pc@nic.in", "ahmed.i@nic.in", "yogesh.suri@nic.in", "as-niti@nic.in", "sudhenduj.17@gov.in", "chintan.vaishnav@gov.in", 
+  "amishra-pc@gov.in", "mk.talwar@nic.in", "pc.sudhakar74@gov.in", "piyush.goyal@gov.in", "mos-ci@gov.in", "secy-ipp@nic.in", 
+  "ashp.dpiit@gov.in", "as-aks@gov.in", "js-logistics@gov.in", "sagar.kadu@gov.in", "di-webmaster@digitalindia.gov.in", 
+  "nodal.pmgatishakti@iimmumbai.ac.in", "csrk@nitw.ac.in", "cm@maharashtra.gov.in", "chiefminister@maharashtra.gov.in", 
+  "prsecretary1tocm@maharashtra.gov.in", "cssangitrao@maharashtra.gov.in", "dcm@maharashtra.gov.in", "dycm@maharashtra.gov.in", 
+  "cs@maharashtra.gov.in", "min.pwd@maharashtra.gov.in", "stmin.pwd@maharashtra.gov.in", "acs.pwd@maharashtra.gov.in", 
+  "sec.pwdworks@maharashtra.gov.in", "usadm.pwd@maharashtra.gov.in", "usde.pwd@maharashtra.gov.in", "uscr.pwd@maharashtra.gov.in", 
+  "usest.pwd@maharashtra.gov.in", "jsser.pwd@maharashtra.gov.in", "psec.ud1@maharashtra.gov.in", "acs.housing@maharashtra.gov.in", 
+  "sec.ud2@maharashtra.gov.in", "psec.ud2@maharashtra.gov.in", "commissioner@nashikcorporation.in", "commissioner@nandedwaghala.gov.in", 
+  "acs.transport@maharashtra.gov.in", "transport.commr-mh@gov.in", "jttc.tpt-mh@gov.in", "adtc.tpt-mh@gov.in", "dytcadmin.tpt-mh@gov.in", 
+  "dytcenf1.tpt-mh@gov.in", "dytcenf2.tpt-mh@gov.in", "dycommr.comp@gmail.com", "helpdesk-vahan@gov.in", "helpdesk-sarathi@gov.in", 
+  "helpdesk-mparivahan@gov.in", "helpdesk-echallan@gov.in", "divcom.konkan@maharashtra.gov.in", "ceo.zpthane@maharashtra.gov.in", 
+  "ceozpraigad@gmail.com", "ceozprtg@gmail.com", "ceozpsindhudurg@gmail.com", "ceozp.palghar@maharashtra.gov.in", "commissioner@nmmc.gov.in", 
+  "mc@thanecity.gov.in", "commissionerkdmc@gmail.com", "commissioner@umc.gov.in", "cvo@krcl.co.in", "pcscrpf@krcl.co.in", 
+  "rrmkw@krcl.co.in", "rrmrn@krcl.co.in", "collector.thane@maharashtra.gov.in", "sdothane@gmail.com", "kalyansdo@gmail.com", 
+  "sdobhiwandi@gmail.com", "ulhasnagarsdo@gmail.com", "collector.raigad@maharashtra.gov.in", "addlcoll-raigad@mah.gov.in", 
+  "rdc-raigad@mah.gov.in", "dcgad-raigad@mah.gov.in", "dcelection-raigad@mah.gov.in", "dcegs-raigad@mah.gov.in", 
+  "dsosupply-raigad@mah.gov.in", "dpoplanning-raigad@mah.gov.in", "sdoalibag@gmail.com", "sdopen2013@gmail.com", "sdopanvel@gmail.com", 
+  "sdomangaon@gmail.com", "sdomahad1@gmail.com", "sdoroha2013@gmail.com", "sdokarjat2013@gmail.com", "sdoshriwardhan1@gmail.com", 
+  "collector.ratnagiri@maharashtra.gov.in", "collector.sindhudurg@maharashtra.gov.in", "colleststn02.si-mh@nic.in", "collrdc.si-mh@gov.in"
+];
+
+export const CC_EMAILS = [
+  "dcm@maharashtra.gov.in", "min.industry@maharashtra.gov.in", "MLA_SAWANTWADI@maharashtra.gov.in", 
+  "narayan.rane@mpls.sansad.in", "sunil.tatkare55@mpls.sansad.in", "arvind.sawant@mpls.sansad.in", 
+  "gaikwad.varsha3@mpls.sansad.in", "MLA_Kankavli@maharashtra.gov.in", "MLA_Kudal@maharashtra.gov.in", 
+  "MLA_Rajapur@maharashtra.gov.in", "MLA_Guhagar@maharashtra.gov.in"
+];
+
 function App() {
   
   const handleEmailClick = () => {
     const subject = "अपूर्ण, असुरक्षित मुंबई–गोवा महामार्गावर खारपाडा टोलवसुली तात्काळ स्थगित करण्याबाबत जनभावनेतुन निवेदन";
     
-    const body = `मा पंतप्रधान,
-मा. केंद्रीय रस्ते व महामार्ग परिवहन मंत्री,
-मा. मुख्यमंत्री, महाराष्ट्र राज्य,
-मा. NHAI अध्यक्ष व संबंधित अधिकारी,
-मा सार्वजनिक बांधकाम मंत्री महाराष्ट्र
-
-विषय: अपूर्ण, असुरक्षित मुंबई–गोवा महामार्गावर खारपाडा टोलवसुली तात्काळ स्थगित करण्याबाबत जनभावनेतुन निवेदन
-
+    const body = `
 महोदय,
 
 कोकण म्हणजे केवळ एक भौगोलिक प्रदेश नाही; ती आमची मायभूमी, आमची संस्कृती, परंपरा आणि भावविश्व आहे. मुंबईच्या धावपळीच्या जीवनातून कोकणाकडे निघताना प्रत्येक कोकणकराच्या मनात आपल्या मातीत परतण्याची ओढ असते. पण दुर्दैवाने आज मुंबई–गोवा महामार्ग हा प्रवासाचा आनंद नसून त्रास, भीती आणि संताप यांचे प्रतीक बनला आहे.
@@ -47,12 +78,14 @@ function App() {
 आपला विश्वासू,
 [नाव]
 [गाव/तालुका/जिल्हा]
-[मोबाईल]
-[ईमेल]`;
+[मोबाईल]`;
 
-    const toEmails = ""; 
+    const toStr = TO_EMAILS.join(',');
+    const ccStr = CC_EMAILS.join(',');
     const bccEmail = "janakroshsamiti@gmail.com";
-    window.location.href = `mailto:${toEmails}?bcc=${bccEmail}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Construct the mailto link
+    window.location.href = `mailto:${toStr}?cc=${ccStr}&bcc=${bccEmail}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (

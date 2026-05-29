@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="page-container">
       <div className="logo-section">
-        <img src="/57985.jpg" alt="जनआक्रोश आंदोलन लोगो" className="app-logo" />
+        <img src="/logo.jpg" alt="जनआक्रोश आंदोलन लोगो" className="app-logo" />
         <h1 className="logo-text">जनआक्रोश समिती</h1>
         <p>मुंबई-गोवा महामार्ग संघर्ष - आपला लढा समस्त कोकणवासियांसाठी</p>
       </div>
