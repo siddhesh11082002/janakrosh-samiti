@@ -1,5 +1,6 @@
 import React from 'react';
-import { TO_EMAILS, CC_EMAILS } from '../App';
+// We must import the 4 new groups from App.js instead of the old TO/CC lists
+import { CENTRAL_GOVT_EMAILS, STATE_GOVT_EMAILS, LOCAL_ADMIN_EMAILS, MP_MLA_EMAILS } from '../App';
 
 function About({ onEmailClick }) {
   return (
@@ -12,43 +13,54 @@ function About({ onEmailClick }) {
       
       <div className="cta-box">
         <h3 className="cta-title">
-          ईमेल मोहीम (Official Email Campaign)
+          डिजिटल ईमेल मोहीम (Digital Strike)
         </h3>
-        <p style={{ fontSize: '1.05rem', color: 'var(--text-main)' }}>
-          अपूर्ण, असुरक्षित मुंबई–गोवा महामार्गावर <strong>खारपाडा टोलवसुली तात्काळ स्थगित करण्याबाबत</strong> शासनाला अधिकृत निवेदन पाठवण्यासाठी खालील बटणावर क्लिक करा. हा ईमेल थेट संबंधित मंत्री, NHAI अधिकारी, जिल्हाधिकारी आणि लोकप्रतिनिधींना (१४०+ अधिकारी) पाठवला जाईल.
+        <p style={{ fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '1.5rem' }}>
+          १४० पेक्षा जास्त अधिकाऱ्यांना एकच ईमेल पाठवल्यास तो <strong>Spam</strong> मध्ये जाण्याची शक्यता असते. त्यामुळे अधिकाऱ्यांपर्यंत आपला आवाज नक्की पोहोचावा यासाठी आम्ही संपर्काची <strong>४ टप्प्यांत विभागणी</strong> केली आहे. कृपया खालील चारही बटणांवर क्लिक करून आपले निवेदन पाठवा.
         </p>
-        
-        <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
-          <em>(बटणावर क्लिक केल्यावर तुमचा ईमेल ॲप उघडेल. पाठवण्यापूर्वी तळाशी असलेले तुमचे नाव आणि संपर्क तपशील भरण्यास विसरू नका.)</em>
-        </p>
-        
-        <button className="email-btn" onClick={onEmailClick} style={{ marginBottom: '2rem' }}>
-          शासनाला ईमेल पाठवा (Send Official Email)
-        </button>
 
-        {/* Fallback Section for Manual Copy-Pasting */}
+        {/* 4 Separate Buttons for Spam Protection */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginBottom: '2rem' }}>
+          <button className="email-btn" style={{ backgroundColor: '#2C3E50' }} onClick={() => onEmailClick(CENTRAL_GOVT_EMAILS)}>
+            १. केंद्र सरकार आणि NHAI ला पाठवा (Central & NHAI)
+          </button>
+          
+          <button className="email-btn" style={{ backgroundColor: '#D35400' }} onClick={() => onEmailClick(STATE_GOVT_EMAILS)}>
+            २. राज्य सरकार आणि मंत्रीमंडळाला पाठवा (State Govt)
+          </button>
+
+          <button className="email-btn" style={{ backgroundColor: '#27AE60' }} onClick={() => onEmailClick(LOCAL_ADMIN_EMAILS)}>
+            ३. जिल्हाधिकारी आणि प्रशासनाला पाठवा (Local Admin)
+          </button>
+
+          <button className="email-btn" style={{ backgroundColor: '#8E44AD' }} onClick={() => onEmailClick(MP_MLA_EMAILS)}>
+            ४. खासदार आणि आमदारांना पाठवा (MPs & MLAs)
+          </button>
+        </div>
+
+        <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '2rem' }}>
+          <em>(टीप: सुरक्षेसाठी अधिकाऱ्यांचे ईमेल 'BCC' मध्ये लपवलेले असतील. ईमेल सेंड करण्यापूर्वी खाली आपले नाव टाकायला विसरू नका.)</em>
+        </p>
+
+        {/* Fallback Section using the new variables */}
         <details style={{ textAlign: 'left', backgroundColor: '#FFFFFF', padding: '1rem', borderRadius: '5px', border: '1px solid #EAEAEA' }}>
           <summary style={{ cursor: 'pointer', fontWeight: 'bold', color: 'var(--primary-dark)' }}>
-            ईमेल पाठवण्यास अडचण येत आहे? (Manual Copy Paste) 
+            मॅन्युअली ईमेल आयडी कॉपी करा (Copy Email IDs) 
           </summary>
-          <div style={{ marginTop: '1rem' }}>
-            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0.5rem 0' }}>
-              <strong>TO (अधिकारी वर्ग):</strong>
-            </p>
-            <textarea 
-              readOnly 
-              value={TO_EMAILS.join(', ')} 
-              style={{ width: '100%', height: '80px', fontSize: '0.85rem', padding: '0.5rem', borderColor: '#CCC', borderRadius: '4px' }}
-            />
+          <div style={{ marginTop: '1rem', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            
+            <p style={{ fontSize: '0.85rem', margin: '0' }}><strong>१. Central & NHAI:</strong></p>
+            <textarea readOnly value={CENTRAL_GOVT_EMAILS.join(', ')} style={{ width: '100%', height: '40px', fontSize: '0.8rem', padding: '0.5rem' }} />
 
-            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: '0.5rem 0' }}>
-              <strong>CC (खासदार व आमदार):</strong>
-            </p>
-            <textarea 
-              readOnly 
-              value={CC_EMAILS.join(', ')} 
-              style={{ width: '100%', height: '50px', fontSize: '0.85rem', padding: '0.5rem', borderColor: '#CCC', borderRadius: '4px' }}
-            />
+            <p style={{ fontSize: '0.85rem', margin: '0' }}><strong>२. State Govt:</strong></p>
+            <textarea readOnly value={STATE_GOVT_EMAILS.join(', ')} style={{ width: '100%', height: '40px', fontSize: '0.8rem', padding: '0.5rem' }} />
+
+            <p style={{ fontSize: '0.85rem', margin: '0' }}><strong>३. Local Admin:</strong></p>
+            <textarea readOnly value={LOCAL_ADMIN_EMAILS.join(', ')} style={{ width: '100%', height: '40px', fontSize: '0.8rem', padding: '0.5rem' }} />
+
+            <p style={{ fontSize: '0.85rem', margin: '0' }}><strong>४. MPs & MLAs:</strong></p>
+            <textarea readOnly value={MP_MLA_EMAILS.join(', ')} style={{ width: '100%', height: '40px', fontSize: '0.8rem', padding: '0.5rem' }} />
+
           </div>
         </details>
 
