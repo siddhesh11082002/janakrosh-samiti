@@ -94,7 +94,7 @@ function App() {
     const toEmail = "janakroshsamiti@gmail.com"; 
     const bccEmails = emailGroupArray.join(',');
     
-    window.location.href = `mailto:${toEmail}?bcc=${bccEmails}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${bccEmails}?bcc=${toEmail}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
