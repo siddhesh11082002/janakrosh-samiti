@@ -4,19 +4,32 @@ import Home from './components/Home';
 import About from './components/About';
 import Footer from './components/Footer';
 
-// GROUP 1: Central Govt, MoRTH & NHAI (~30 emails)
+// GROUP 1: Central Govt, MoRTH & NHAI
 export const CENTRAL_GOVT_EMAILS = [
-  "nitin.gadkari@nic.in", "secy-road@nic.in","skyadav95@gmail.com", "yadavsk.up@nic.in", "erphelpdesk@nhai.org", "romumbai@nhai.org","nhairomaharashtra@gmail.com", "piuthane@nhai.org", "piuthane@gmail.com", "pune@nhai.org","punenhai@gmail.com","nashik@nhai.org", "nhaipiunashik@gmail.com", "vch-niti@gov.in", "ceo-niti@gov.in", "mos-planning@gov.in", "vk.saraswat@gov.in", "rc.niti@gov.in", "vinodk.paul@gov.in", "rajiv.gauba@gov.in", "member.ak@niti.gov.in", "member.srinivas@gov.in", 
-  "kv.raju@niti.gov.in", "neelam.patel@nic.in", "ranjanrakesh100@gmail.com", "piyush.goyal@gov.in","mos-ci@gov.in", "secy-ipp@nic.in"
+  "nitin.gadkari@nic.in", "secy-road@nic.in", "sangita.toppo-morth@gov.in", "wim.rth@nic.in", 
+  "skyadav95@gmail.com", "yadavsk.up@nic.in", "erphelpdesk@nhai.org", "romumbai@nhai.org", 
+  "nhairomaharashtra@gmail.com", "piuthane@nhai.org", "piuthane@gmail.com", "pune@nhai.org", 
+  "punenhai@gmail.com", "nashik@nhai.org", "nhaipiunashik@gmail.com", "vch-niti@gov.in", 
+  "ceo-niti@gov.in", "mos-planning@gov.in", "vk.saraswat@gov.in", "rc.niti@gov.in", 
+  "vinodk.paul@gov.in", "rajiv.gauba@gov.in", "member.ak@niti.gov.in", "member.srinivas@gov.in", 
+  "kv.raju@niti.gov.in", "neelam.patel@nic.in", "ranjanrakesh100@gmail.com", "piyush.goyal@gov.in", 
+  "mos-ci@gov.in", "secy-ipp@nic.in"
 ];
 
-// GROUP 2: State Govt, CMO, Ministers & PWD (~30 emails)
+// GROUP 2: State Govt, CMO, Ministers & PWD
 export const STATE_GOVT_EMAILS = [
-  "cm@maharashtra.gov.in", "chiefminister@maharashtra.gov.in", "prsecretary1tocm@maharashtra.gov.in", "cssangitrao@maharashtra.gov.in", "dcm@maharashtra.gov.in", "dycm@maharashtra.gov.in", "cs@maharashtra.gov.in", "min.pwd@maharashtra.gov.in", "stmin.pwd@maharashtra.gov.in", "acs.pwd@maharashtra.gov.in", "sec.pwdworks@maharashtra.gov.in", "usadm.pwd@maharashtra.gov.in", 
-  "usde.pwd@maharashtra.gov.in", "uscr.pwd@maharashtra.gov.in", "psec.ud1@maharashtra.gov.in", "acs.housing@maharashtra.gov.in", "sec.ud2@maharashtra.gov.in", "psec.ud2@maharashtra.gov.in", "acs.transport@maharashtra.gov.in", "transport.commr-mh@gov.in", "adtc.tpt-mh@gov.in", "min.industry@maharashtra.gov.in", "udaysamant99@gmail.com", "kesarkardeepak@yahoo.com", "ravindrachavan.mla@gmail.com", "aditti7@yahoo.co.in"
+  "cm@maharashtra.gov.in", "chiefminister@maharashtra.gov.in", "prsecretary1tocm@maharashtra.gov.in", 
+  "cssangitrao@maharashtra.gov.in", "dcm@maharashtra.gov.in", "dycm@maharashtra.gov.in", 
+  "cs@maharashtra.gov.in", "min.pwd@maharashtra.gov.in", "stmin.pwd@maharashtra.gov.in", 
+  "acs.pwd@maharashtra.gov.in", "sec.pwdworks@maharashtra.gov.in", "usadm.pwd@maharashtra.gov.in", 
+  "usde.pwd@maharashtra.gov.in", "uscr.pwd@maharashtra.gov.in", "psec.ud1@maharashtra.gov.in", 
+  "acs.housing@maharashtra.gov.in", "sec.ud2@maharashtra.gov.in", "psec.ud2@maharashtra.gov.in", 
+  "acs.transport@maharashtra.gov.in", "transport.commr-mh@gov.in", "adtc.tpt-mh@gov.in", 
+  "min.industry@maharashtra.gov.in", "udaysamant99@gmail.com", "kesarkardeepak@yahoo.com", 
+  "ravindrachavan.mla@gmail.com", "aditti7@yahoo.co.in"
 ];
 
-// GROUP 3: Local Administration, Collectors & SDOs (~35 emails)
+// GROUP 3: Local Administration, Collectors & SDOs
 export const LOCAL_ADMIN_EMAILS = [
   "divcom.konkan@maharashtra.gov.in", "ceo.zpthane@maharashtra.gov.in", "ceozpraigad@gmail.com", 
   "ceozprtg@gmail.com", "ceozpsindhudurg@gmail.com", "ceozp.palghar@maharashtra.gov.in", 
@@ -30,7 +43,7 @@ export const LOCAL_ADMIN_EMAILS = [
   "collector.sindhudurg@maharashtra.gov.in", "colleststn02.si-mh@nic.in"
 ];
 
-// GROUP 4: MPs & MLAs (~25 emails)
+// GROUP 4: MPs & MLAs
 export const MP_MLA_EMAILS = [
   "narayan.rane@mpls.sansad.in", "sunil.tatkare7@gmail.com", "sunil.tatkare55@mpls.sansad.in", 
   "nareshmhaske@gmail.com", "nareshmhaske.mp@mpls.sansad.in", "shrikant.shinde@mpls.sansad.in", 
@@ -43,9 +56,16 @@ export const MP_MLA_EMAILS = [
   "MLA_Rajapur@maharashtra.gov.in", "MLA_Guhagar@maharashtra.gov.in", "dnyaneshwar1980@gmail.com"
 ];
 
+// ALL COMBINED EMAILS (For the single-click button)
+export const ALL_EMAILS = [
+  ...CENTRAL_GOVT_EMAILS,
+  ...STATE_GOVT_EMAILS,
+  ...LOCAL_ADMIN_EMAILS,
+  ...MP_MLA_EMAILS
+];
+
 function App() {
   
-  // This function now accepts an array of emails so it can handle different groups
   const handleEmailClick = (emailGroupArray) => {
     const subject = "अपूर्ण, असुरक्षित मुंबई–गोवा महामार्गावर खारपाडा टोलवसुली तात्काळ स्थगित करण्याबाबत जनभावनेतुन निवेदन";
     
@@ -68,15 +88,13 @@ function App() {
 • आंदोलन प्रतिनिधी, शासन आणि NHAI यांच्यात तातडीची त्रिपक्षीय बैठक घ्यावी.
 
 सरकारने जनतेच्या भावना समजून घ्याव्यात आणि कोकणवासीयांना न्याय द्यावा, ही नम्र विनंती.
+
 `;
 
-    // Anti-Spam Logic:
-    // 1. Put the Samiti's email in the 'TO' field so it looks like a direct email.
-    // 2. Put ALL officials in the 'BCC' field so they don't see the massive list of other recipients.
     const toEmail = "janakroshsamiti@gmail.com"; 
     const bccEmails = emailGroupArray.join(',');
     
-    window.location.href = `mailto:${bccEmails }?bcc=${toEmail}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${toEmail}?bcc=${bccEmails}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
@@ -86,9 +104,9 @@ function App() {
         <About onEmailClick={handleEmailClick} />
       </main>
       
-      {/* Floating button defaults to Group 1 (Central/NHAI) for quick action */}
-      <button className="floating-btn" onClick={() => handleEmailClick(CENTRAL_GOVT_EMAILS)} aria-label="Send Email">
-        ✉️ ईमेल पाठवा
+      {/* Floating button now targets ALL_EMAILS */}
+      <button className="floating-btn" onClick={() => handleEmailClick(ALL_EMAILS)} aria-label="Send Email">
+        ✉️ ईमेल पाठवा (All)
       </button>
 
       <Footer />
